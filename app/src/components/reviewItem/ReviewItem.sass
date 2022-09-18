@@ -1,0 +1,104 @@
+@import "../../constants/const-styles.sass"
+.user-review
+	transition: 0s !important
+	.fancybox__container
+		z-index: 100000000000 !important
+		.fancybox__content
+			width: 30vmin !important
+			height: 30vmin !important
+			z-index: 100000000000 !important
+			// transition: 0s !important
+			img
+				transition: 0s !important
+				width: 100% !important
+				height: 100% !important
+.user-review 
+	max-width: 100%
+	height: auto
+	background-color: $grey-color
+	padding: 20px 16px
+	color: $white-color !important
+	width: 540px
+
+	&:not(:last-child) 
+		margin-bottom: 20px
+
+	& .user-info-head 
+		width: 100%
+		display: flex
+		align-items: center
+		margin-bottom: 12px
+		.user-info
+			h2
+				color: $white-color
+
+	.user-avatar 
+		border-radius: 50%
+		margin-right: 15px
+		max-height: 48px
+		max-width: 48px
+
+	.user-review-body 
+		color: $white-color !important
+		width: 100%
+
+
+	.user-review-body #user-review-text 
+		margin-bottom: 16px
+		color: $white-color
+
+	.user-avatar-btn
+		@include button-reset
+		background-color: transparent
+	.user-review-img 
+		width: 96px
+		height: 96px
+
+
+	.user-img-container 
+		margin-bottom: 16px
+
+	.user-img-container img 
+		max-width: 96px
+		max-height: 96px
+		&:not(:last-child)
+			margin-right: 8px
+	.review-rate-header 
+		margin-bottom: 16px
+		text-align: left
+		color: $white-color
+
+	.review-answer-container
+		form
+			display: flex
+		button
+			padding: 0
+			&:not(:first-child)
+				margin-right: 14px
+	.review-aswer-button 
+		cursor: pointer
+		user-select: none
+		transition: 0.25s
+		padding: 15px 30px
+		color: $white-color
+		text-align: center
+		font-family: NeueMachina-Ultrabold
+	.review-aswer-button.button-tasted  /* Positive answer  */
+		width: 91px
+
+
+	.review-aswer-button.button-wanted  /* Negative answer */
+		width: 101px
+
+
+	.review-aswer-checkbox 
+		-webkit-appearance: none
+	.review-answer-block-1 span, .review-answer-block-2 span
+		color: $white-color
+	.review-answer-block-1 input:checked ~ button,
+	.review-answer-block-2 input:checked ~ button
+		background-color: $yellow-color !important
+		border-color: $yellow-color !important
+	.review-answer-block-1 input:checked ~ button label,
+	.review-answer-block-2 input:checked ~ button label
+		color: $black-color !important

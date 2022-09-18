@@ -1,0 +1,182 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.user-review {
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
+}
+.user-review .fancybox__container {
+  z-index: 100000000000 !important;
+}
+.user-review .fancybox__container .fancybox__content {
+  width: 30vmin !important;
+  height: 30vmin !important;
+  z-index: 100000000000 !important;
+}
+.user-review .fancybox__container .fancybox__content img {
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.user-review {
+  max-width: 100%;
+  height: auto;
+  background-color: #2D2D30;
+  padding: 20px 16px;
+  color: #FFFFFF !important;
+  width: 540px;
+}
+.user-review:not(:last-child) {
+  margin-bottom: 20px;
+}
+.user-review .user-info-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+}
+.user-review .user-info-head .user-info h2 {
+  color: #FFFFFF;
+}
+.user-review .user-avatar {
+  border-radius: 50%;
+  margin-right: 15px;
+  max-height: 48px;
+  max-width: 48px;
+}
+.user-review .user-review-body {
+  color: #FFFFFF !important;
+  width: 100%;
+}
+.user-review .user-review-body #user-review-text {
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+.user-review .user-avatar-btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.user-review .user-review-img {
+  width: 96px;
+  height: 96px;
+}
+.user-review .user-img-container {
+  margin-bottom: 16px;
+}
+.user-review .user-img-container img {
+  max-width: 96px;
+  max-height: 96px;
+}
+.user-review .user-img-container img:not(:last-child) {
+  margin-right: 8px;
+}
+.user-review .review-rate-header {
+  margin-bottom: 16px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.user-review .review-answer-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user-review .review-answer-container button {
+  padding: 0;
+}
+.user-review .review-answer-container button:not(:first-child) {
+  margin-right: 14px;
+}
+.user-review .review-aswer-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  padding: 15px 30px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: NeueMachina-Ultrabold;
+}
+.user-review .review-aswer-button.button-tasted {
+  width: 91px;
+}
+.user-review .review-aswer-button.button-wanted {
+  width: 101px;
+}
+.user-review .review-aswer-checkbox {
+  -webkit-appearance: none;
+}
+.user-review .review-answer-block-1 span, .user-review .review-answer-block-2 span {
+  color: #FFFFFF;
+}
+.user-review .review-answer-block-1 input:checked ~ button,
+.user-review .review-answer-block-2 input:checked ~ button {
+  background-color: #E7BB63 !important;
+  border-color: #E7BB63 !important;
+}
+.user-review .review-answer-block-1 input:checked ~ button label,
+.user-review .review-answer-block-2 input:checked ~ button label {
+  color: #020204 !important;
+}

@@ -1,0 +1,296 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (max-width: 915px) {
+  .WelcomeSubAlert_blur_wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #020204;
+    z-index: 1000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: scroll;
+  }
+  .WelcomeSubAlert_blur_wrapper .WelcomeSubAlert_container {
+    width: 375px;
+    padding: 56px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 840px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_closeBtn_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 327px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_closeBtn_block .welcomeSubPage_closeBtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_blackStarIcon {
+    width: 327px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 10px;
+    margin-bottom: 25px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_blackStarIcon svg {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_sub_info {
+    margin-bottom: 38px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_sub_info .welcomeSubPage_sub_info_p_1, .WelcomeSubAlert_blur_wrapper .welcomeSubPage_sub_info .welcomeSubPage_sub_info_p_2 {
+    margin-bottom: 25px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_price_header {
+    margin-bottom: 40px;
+    font-family: "NeueMachina-Ultrabold";
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_BuySubscription_button_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_BuySubscription_button_block .welcomeSubPage_testChaQi_button {
+    background-color: #020204;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    font-family: "NeueMachina-Ultrabold";
+    width: 327px;
+    height: 48px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_BuySubscription_button_block .welcomeSubPage_BuySubscription_button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #020204;
+    font-family: "NeueMachina-Ultrabold";
+    border: 3px solid #020204;
+    width: 327px;
+    height: 48px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 915px) {
+  .WelcomeSubAlert_blur_wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #020204;
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: scroll;
+  }
+  .WelcomeSubAlert_blur_wrapper .WelcomeSubAlert_container {
+    width: 500px;
+    height: 700px;
+    padding: 32px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_closeBtn_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_closeBtn_block .welcomeSubPage_closeBtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_blackStarIcon {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 10px;
+    padding-bottom: 35px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_blackStarIcon svg {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_sub_info {
+    margin-bottom: 38px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_sub_info .welcomeSubPage_sub_info_p_1, .WelcomeSubAlert_blur_wrapper .welcomeSubPage_sub_info .welcomeSubPage_sub_info_p_2 {
+    margin-bottom: 25px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_price_header {
+    margin-bottom: 25px;
+    font-family: "NeueMachina-Ultrabold";
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_BuySubscription_button_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_BuySubscription_button_block .welcomeSubPage_testChaQi_button {
+    background-color: #020204;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    font-family: "NeueMachina-Ultrabold";
+    width: 327px;
+    height: 48px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+  }
+  .WelcomeSubAlert_blur_wrapper .welcomeSubPage_BuySubscription_button_block .welcomeSubPage_BuySubscription_button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #020204;
+    font-family: "NeueMachina-Ultrabold";
+    border: 3px solid #020204;
+    width: 327px;
+    height: 48px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+  }
+}

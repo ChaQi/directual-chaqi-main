@@ -1,0 +1,242 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (max-width: 915px) {
+  .subscriptionAlert_blur_wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #020204;
+    z-index: 1000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: scroll;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionAlert_container {
+    width: 375px;
+    padding: 56px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 812px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_closeBtn_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 327px;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_closeBtn_block .subscriptionPage_closeBtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_blackStarIcon {
+    width: 327px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 10px;
+    margin-bottom: 25px;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_blackStarIcon svg {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_sub_info {
+    margin-bottom: 38px;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_sub_info .subscriptionPage_sub_info_p_1, .subscriptionAlert_blur_wrapper .subscriptionPage_sub_info .subscriptionPage_sub_info_p_2 {
+    margin-bottom: 25px;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_price_header {
+    margin-bottom: 40px;
+    font-family: "NeueMachina-Ultrabold";
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_BuySubscription_button_block {
+    width: 327px;
+    height: 48px;
+    outline: none;
+    border: none;
+    background-color: #020204;
+    color: #FFFFFF;
+    border-radius: 500px;
+    font-family: "NeueMachina-Ultrabold";
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 915px) {
+  .subscriptionAlert_blur_wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #020204;
+    z-index: 10000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: scroll;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionAlert_container {
+    width: 500px;
+    height: 700px;
+    padding: 32px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_closeBtn_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_closeBtn_block .subscriptionPage_closeBtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_blackStarIcon {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 10px;
+    padding-bottom: 35px;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_blackStarIcon svg {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_sub_info {
+    margin-bottom: 38px;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_sub_info .subscriptionPage_sub_info_p_1, .subscriptionAlert_blur_wrapper .subscriptionPage_sub_info .subscriptionPage_sub_info_p_2 {
+    margin-bottom: 25px;
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_price_header {
+    margin-bottom: 25px;
+    font-family: "NeueMachina-Ultrabold";
+  }
+  .subscriptionAlert_blur_wrapper .subscriptionPage_BuySubscription_button_block {
+    width: 327px;
+    height: 48px;
+    outline: none;
+    border: none;
+    background-color: #020204;
+    color: #FFFFFF;
+    border-radius: 500px;
+    font-family: "NeueMachina-Ultrabold";
+    font-size: 16px;
+  }
+}

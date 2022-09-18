@@ -1,0 +1,150 @@
+@import "../../constants/const-styles.sass"
+// @import "./profile-img2.png"
+@media screen and (max-width: 915px)
+    .WelcomeSubAlert_blur_wrapper
+        width: 100vw
+        height: 100vh
+        background-color: $black-color
+        z-index: 1000000
+        position: fixed
+        top: 0
+        left: 0
+        display: flex
+        justify-content: center
+        overflow: scroll
+        .WelcomeSubAlert_container
+            width: 375px
+            padding: 56px 24px
+            display: flex
+            align-items: center
+            flex-direction: column
+            height: 840px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+        .welcomeSubPage_closeBtn_block
+            display: flex
+            justify-content: flex-end
+            align-items: flex-end
+            width: (375px - 48px)
+            .welcomeSubPage_closeBtn
+                @include button-reset
+                background-color: transparent
+                transform: scale(1.5)
+        .welcomeSubPage_blackStarIcon
+            width: (375px - 48px)
+            display: flex
+            justify-content: flex-start
+            padding: 0 10px
+            margin-bottom: 25px
+            svg
+                transform: scale(2)
+        .welcomeSubPage_sub_info
+            margin-bottom: 38px
+            .welcomeSubPage_sub_info_p_1, .welcomeSubPage_sub_info_p_2
+                margin-bottom: 25px
+                // padding-bottom: 20px
+        .welcomeSubPage_price_header
+            margin-bottom: 40px
+            font-family: "NeueMachina-Ultrabold"
+        .welcomeSubPage_BuySubscription_button_block
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            .welcomeSubPage_testChaQi_button
+                background-color: $black-color
+                @include button-reset
+                color: $white-color
+                font-family: "NeueMachina-Ultrabold"
+                width: 327px
+                height: 48px
+                border-radius: 50px
+                margin-bottom: 16px
+            .welcomeSubPage_BuySubscription_button
+                background-color: transparent
+                @include button-reset
+                color: $black-color
+                font-family: "NeueMachina-Ultrabold"
+                border: 3px solid $black-color
+                width: 327px
+                height: 48px
+                border-radius: 50px
+                margin-bottom: 16px
+
+
+@media screen and (min-width: 915px)
+    .WelcomeSubAlert_blur_wrapper
+        width: 100vw
+        height: 100vh
+        background-color: $black-color
+        z-index: 10000000
+        position: fixed
+        top: 0
+        left: 0
+        background: rgba(0,0,0,0.4)
+        backdrop-filter: blur(15px)
+        border: 1px solid rgba(0,0,0,0.2)
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow-y: scroll
+        .WelcomeSubAlert_container
+            width: 500px
+            height: 700px
+            padding: 32px 24px
+            display: flex
+            align-items: center
+            flex-direction: column
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+        .welcomeSubPage_closeBtn_block
+            display: flex
+            justify-content: flex-end
+            // align-items: flex-end
+            width: 100%
+            .welcomeSubPage_closeBtn
+                @include button-reset
+                background-color: transparent
+                transform: scale(1.5)
+        .welcomeSubPage_blackStarIcon
+            width: 100%
+            display: flex
+            justify-content: flex-start
+            padding: 0 10px
+            padding-bottom: 35px
+            // margin-bottom: 25px
+            svg
+                transform: scale(2)
+        .welcomeSubPage_sub_info
+            margin-bottom: 38px
+            .welcomeSubPage_sub_info_p_1, .welcomeSubPage_sub_info_p_2
+                margin-bottom: 25px
+        .welcomeSubPage_price_header
+            margin-bottom: 25px
+            font-family: "NeueMachina-Ultrabold"
+        .welcomeSubPage_BuySubscription_button_block
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            .welcomeSubPage_testChaQi_button
+                background-color: $black-color
+                @include button-reset
+                color: $white-color
+                font-family: "NeueMachina-Ultrabold"
+                width: 327px
+                height: 48px
+                border-radius: 50px
+                margin-bottom: 16px
+            .welcomeSubPage_BuySubscription_button
+                background-color: transparent
+                @include button-reset
+                color: $black-color
+                font-family: "NeueMachina-Ultrabold"
+                border: 3px solid $black-color
+                width: 327px
+                height: 48px
+                border-radius: 50px
+                margin-bottom: 16px

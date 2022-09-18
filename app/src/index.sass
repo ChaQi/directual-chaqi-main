@@ -1,0 +1,31 @@
+@import "./constants/const-styles.sass"
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+html, body, .app, .app-wrapper
+	background-color: $black-color
+	min-width: 100vw
+	min-height: 100vh
+	overflow-x: hidden
+	position: relative
+.app-wrapper
+	display: flex
+	align-items: center !important
+	flex-direction: column
+	max-height: none
+	visibility: visible
+.app-wrapper.unactive
+	visibility: none
+	max-height: 100vh
+button
+	cursor: pointer
+	user-select: none
+
+nav.main-nav
+	display: none
+@media screen and (max-width: 915px)
+	nav.main-nav
+		display: flex
+		position: fixed
+		bottom: 0

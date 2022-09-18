@@ -1,0 +1,16 @@
+.user_review_block {
+  overflow-y: scroll;
+  max-height: 500px;
+}
+.user_review_block::-webkit-scrollbar {
+  display: none;
+}
+.user_review_block div {
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 915px) {
+  .user_review_block {
+    padding-bottom: 120px;
+  }
+}

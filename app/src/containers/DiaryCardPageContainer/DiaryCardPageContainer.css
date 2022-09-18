@@ -1,0 +1,179 @@
+.DiaryCardContainer {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 32px 1fr 32px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: 375px 32px 375px 32px 375px;
+  grid-template-columns: repeat(3, 375px);
+  grid-row-gap: 32px;
+  grid-column-gap: 32px;
+  padding-bottom: 100px;
+}.DiaryCardContainer > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}.DiaryCardContainer > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}.DiaryCardContainer > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}.DiaryCardContainer > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}.DiaryCardContainer > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}.DiaryCardContainer > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}.DiaryCardContainer > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}.DiaryCardContainer > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}.DiaryCardContainer > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+@media screen and (max-width: 1419px) {
+  .DiaryCardContainer {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-rows: auto auto !important;
+    grid-template-rows: auto auto !important;
+    width: 785px;
+    -ms-grid-columns: (auto)[2] !important;
+    grid-template-columns: repeat(2, auto) !important;
+  }
+  .DiaryCardContainer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .DiaryCardContainer > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .DiaryCardContainer > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .DiaryCardContainer > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+}
+@media screen and (min-width: 916px) {
+  .DiaryCardContainer_toastContainer {
+    position: fixed;
+    top: 50px;
+    width: 375px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: 1s;
+    transition: 1s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1000;
+  }
+  .DiaryCardContainer_toastContainer div {
+    min-height: 130px;
+    z-index: 1000;
+  }
+  .DiaryCardContainer_toastContainer div button {
+    margin-top: 8px;
+  }
+  .DiaryCardContainer_toastContainer div p {
+    position: absolute;
+    top: 12px;
+    font-size: 14px !important;
+    font-family: "NeueMachina-Light" !important;
+    font-weight: 100 !important;
+  }
+
+  .DiaryCardContainer_toastContainer.active {
+    opacity: 1;
+  }
+
+  .DiaryCardContainer_toastContainer.unactive {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 915px) {
+  .DiaryCardContainer {
+    width: 375px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-rows: auto 0 auto !important;
+    grid-template-rows: auto auto !important;
+    grid-gap: 0;
+    -ms-grid-columns: auto !important;
+    grid-template-columns: repeat(1, auto) !important;
+  }
+  .DiaryCardContainer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .DiaryCardContainer > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .DiaryCardContainer_toastContainer {
+    position: fixed;
+    top: 38px;
+    width: 375px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1000;
+  }
+  .DiaryCardContainer_toastContainer div {
+    min-height: 130px;
+    z-index: 1000;
+  }
+  .DiaryCardContainer_toastContainer div button {
+    margin-top: 8px;
+  }
+  .DiaryCardContainer_toastContainer div p {
+    position: absolute;
+    top: 12px;
+    font-size: 14px !important;
+    font-family: "NeueMachina-Light" !important;
+    font-weight: 100 !important;
+  }
+
+  .DiaryCardContainer_toastContainer.active {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .DiaryCardContainer_toastContainer.unactive {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}

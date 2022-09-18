@@ -1,0 +1,119 @@
+@import "../../constants/const-styles.sass"
+// @import "./profile-img2.png"
+@media screen and (max-width: 915px)
+    .subscriptionAlert_blur_wrapper
+        width: 100vw
+        height: 100vh
+        background-color: $black-color
+        z-index: 1000000
+        position: fixed
+        top: 0
+        left: 0
+        display: flex
+        justify-content: center
+        overflow: scroll
+        .subscriptionAlert_container
+            width: 375px
+            padding: 56px 24px
+            display: flex
+            align-items: center
+            flex-direction: column
+            height: 812px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+        .subscriptionPage_closeBtn_block
+            display: flex
+            justify-content: flex-end
+            align-items: flex-end
+            width: (375px - 48px)
+            .subscriptionPage_closeBtn
+                @include button-reset
+                background-color: transparent
+                transform: scale(1.5)
+        .subscriptionPage_blackStarIcon
+            width: (375px - 48px)
+            display: flex
+            justify-content: flex-start
+            padding: 0 10px
+            margin-bottom: 25px
+            svg
+                transform: scale(2)
+        .subscriptionPage_sub_info
+            margin-bottom: 38px
+            .subscriptionPage_sub_info_p_1, .subscriptionPage_sub_info_p_2
+                margin-bottom: 25px
+                // padding-bottom: 20px
+        .subscriptionPage_price_header
+            margin-bottom: 40px
+            font-family: "NeueMachina-Ultrabold"
+        .subscriptionPage_BuySubscription_button_block
+            width: 327px
+            height: 48px
+            @include button-reset
+            background-color: $black-color
+            color: $white-color
+            border-radius: 500px
+            font-family: "NeueMachina-Ultrabold"
+            font-size: 16px
+@media screen and (min-width: 915px)
+    .subscriptionAlert_blur_wrapper
+        width: 100vw
+        height: 100vh
+        background-color: $black-color
+        z-index: 10000000
+        position: fixed
+        top: 0
+        left: 0
+        background: rgba(0,0,0,0.4)
+        backdrop-filter: blur(15px)
+        border: 1px solid rgba(0,0,0,0.2)
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow-y: scroll
+        .subscriptionAlert_container
+            width: 500px
+            height: 700px
+            padding: 32px 24px
+            display: flex
+            align-items: center
+            flex-direction: column
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+        .subscriptionPage_closeBtn_block
+            display: flex
+            justify-content: flex-end
+            // align-items: flex-end
+            width: 100%
+            .subscriptionPage_closeBtn
+                @include button-reset
+                background-color: transparent
+                transform: scale(1.5)
+        .subscriptionPage_blackStarIcon
+            width: 100%
+            display: flex
+            justify-content: flex-start
+            padding: 0 10px
+            padding-bottom: 35px
+            // margin-bottom: 25px
+            svg
+                transform: scale(2)
+        .subscriptionPage_sub_info
+            margin-bottom: 38px
+            .subscriptionPage_sub_info_p_1, .subscriptionPage_sub_info_p_2
+                margin-bottom: 25px
+                // padding-bottom: 20px
+        .subscriptionPage_price_header
+            margin-bottom: 25px
+            font-family: "NeueMachina-Ultrabold"
+        .subscriptionPage_BuySubscription_button_block
+            width: 327px
+            height: 48px
+            @include button-reset
+            background-color: $black-color
+            color: $white-color
+            border-radius: 500px
+            font-family: "NeueMachina-Ultrabold"
+            font-size: 16px

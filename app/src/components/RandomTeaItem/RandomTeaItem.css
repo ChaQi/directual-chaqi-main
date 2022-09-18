@@ -1,0 +1,123 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.randomTeaItem_container {
+  width: 100%;
+  padding: 0 24px;
+  margin-top: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: scroll;
+  margin-bottom: 150px;
+}
+.randomTeaItem_container::-webkit-scrollbar {
+  display: none;
+}
+.randomTeaItem_container .randomTeaItem {
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.randomTeaItem_container .randomTeaItem .randomTeaItem_tea_name_headline {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.randomTeaItem_container .randomTeaItem .randomTeaItem_teaShape {
+  width: 305px;
+  height: 305px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #E7BB63;
+  border-radius: 48% 52% 43% 57%/36% 40% 60% 64%;
+  position: relative;
+}
+.randomTeaItem_container .randomTeaItem .randomTeaItem_teaShape:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 2px solid #E7BB63;
+  border-radius: 39% 61% 43% 57%/63% 48% 52% 37%;
+}
+.randomTeaItem_container .randomTeaItem .randomTeaItem_teaShape img {
+  border-radius: 55% 45% 63% 37%/53% 63% 37% 47%;
+  width: 70%;
+  height: 70%;
+}
+.randomTeaItem_container .randomTeaItem .randomTeaItem_showCard_btn {
+  padding-bottom: 24px;
+}

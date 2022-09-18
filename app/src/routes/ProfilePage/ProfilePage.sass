@@ -1,0 +1,142 @@
+@import "../../constants/const-styles.sass"
+.profilePage_container
+    div.unactive
+            opacity: 0
+            visibility: hidden
+            transform: translateX(-1000px)
+            max-width: 0
+            max-height: 0
+            display: none
+    .teaListContainer
+            opacity: 1
+            visibility: visible
+            transform: translateX(0px)
+            max-width: none
+            max-height: none
+            display: grid
+@media screen and (max-width: 915px)
+    .profilePage_container
+        .app-header
+            display: none !important
+        padding: 56px 20px 0px 20px
+        .profilePage_settings_block
+            width: 375px
+            padding-right: 20px
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            .profilePage_settings_btn_m
+                @include button-reset
+                background-color: transparent
+        .profilePage_userInfo
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-bottom: 32px
+            .profilePage_userAvatar_block
+                border: 2px solid $white-color
+                border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+                width: 98px
+                height: 98px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-bottom: 20px
+                .profilePage_userImg
+                    width: 85%
+                    height: 85%
+                    border-radius: 73% 27% 43% 57% / 44% 46% 54% 56%
+            .profilePage_username
+                color: $white-color
+                margin-bottom: 4px
+            .profilePage_categoryTeasCount_info
+                color: $white-color
+        
+        .profilePage_teaCategoryFilter
+            margin-bottom: 36px
+            form
+                display: flex
+                align-items: center
+                justify-content: center
+                .profilePage_reviewOption
+                    &:not(:last-child)
+                        margin-right: 12px
+                    .profilePage_teaCategoryInput
+                        -webkit-appearance: none
+                        display: none
+                    button
+                        padding: 0
+                        cursor: pointer
+                        & > label
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            padding: 10px 24px 8px
+                            cursor: pointer
+        .profilePage_changeProfileBtn
+            display: none
+@media screen and (min-width: 916px)
+    .profilePage_container
+        display: flex
+        align-items: center
+        justify-content: center
+        .profilePage_profileMainWrapper
+            padding-top: 168px
+            .profilePage_settings_block
+                display: none
+            .profilePage_userInfo
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin-bottom: 20px
+                .profilePage_userAvatar_block
+                    border: 2px solid $white-color
+                    border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+                    width: 140px
+                    height: 140px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin-bottom: 20px
+                    .profilePage_userImg
+                        width: 85%
+                        height: 85%
+                        border-radius: 73% 27% 43% 57% / 44% 46% 54% 56%
+                .profilePage_username
+                    color: $white-color
+                    margin-bottom: 4px
+                    font-size: 48px
+                    line-height: 58px
+                .profilePage_categoryTeasCount_info
+                    color: $white-color
+                    display: none
+                .profilePage_changeProfileBtn
+                    display: block
+                    color: $white-color
+                    @include button-reset
+                    background-color: transparent
+            .profilePage_teaCategoryFilter
+                margin-bottom: 36px
+                form
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    .profilePage_reviewOption
+                        &:not(:last-child)
+                            margin-right: 12px
+                        .profilePage_teaCategoryInput
+                            -webkit-appearance: none
+                            display: none
+                        button
+                            padding: 0
+                            cursor: pointer
+                            & > label
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                padding: 10px 24px 8px
+                                cursor: pointer
+            .not_authorized_empty_paragraph
+                font-size: 18px

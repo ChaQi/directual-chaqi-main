@@ -1,0 +1,54 @@
+.headerOne-font {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+  color: #020204;
+}
+
+.headerTwo-font {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #020204;
+}
+
+.buttonOne-font {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #020204;
+}
+
+.buttonTwo-font {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #020204;
+}
+
+.captionOne-font {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #020204;
+}
+
+.captionTwo-font {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #020204;
+}
