@@ -1,0 +1,91 @@
+@import "../../constants/const-styles.sass"
+$load_transition: 1.25s
+@keyframes border-switch
+    0%
+        border-radius: 39% 61% 43% 57% / 63% 48% 52% 37% 
+    25%
+        border-radius: 55% 45% 63% 37% / 53% 63% 37% 47%
+    50%
+        border-radius: 73% 27% 43% 57% / 44% 46% 54% 56%
+    75%
+        border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+    100%
+        border-radius: 39% 61% 43% 57% / 63% 48% 52% 37%
+@keyframes star_scaling_mobile
+    0%
+        transform: scale(1.0)
+    50%
+        transform: scale(1.07)
+    100%
+        transform: scale(1.0)
+@keyframes star_scaling_desktop
+    0%
+        transform: scale(1.1)
+    50%
+        transform: scale(1.2)
+    100%
+        transform: scale(1.1)
+.main_loader_container
+    transition: $load_transition
+    transition: $reg-transition
+    min-width: 100vw
+    min-height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100000000000000
+    background-color: $black-color
+    
+@media screen and (max-width: 915px)
+.main_loader_container
+    transition: $load_transition
+    .star_wrapper
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 2px solid $white-color
+        animation: border-switch 10s linear infinite
+        width: 170px
+        height: 170px
+        svg
+            animation: star_scaling_mobile 2.5s linear infinite
+    .loader_logo_text
+        position: absolute
+        color: $white-color
+        bottom: 117px
+        left: 50%
+        transform: translateX(-50%)
+@media screen and (min-width: 916px)
+    .star_wrapper
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 2px solid $white-color
+        animation: border-switch 10s linear infinite
+        width: 200px
+        height: 200px
+        svg
+            animation: star_scaling_desktop 2.5s linear infinite
+    .loader_logo_text
+        position: absolute
+        color: $white-color
+        font-size: 30px
+        bottom: 117px
+        left: 50%
+        transform: translateX(-50%)
+
+.main_loader_container.unactive
+    transition: $load_transition
+    transform: scale(0)
+    opacity: 0
+    width: 0
+    height: 0
+    background-color: transparent

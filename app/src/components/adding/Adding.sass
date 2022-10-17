@@ -1,0 +1,526 @@
+@import "../../constants/const-styles.sass"
+.adding_tost_container_one_wrapper
+	.danger
+		border: 2px solid #ff744a41
+	height: 100%
+	width: 375px
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	display: flex
+	top: 38px
+.selected
+	.adding_slider_item_img
+		border: 2px solid $yellow-color !important
+	.adding_slider_item_headline
+		color: $yellow-color !important
+.adding_searchBar_block.unactive, .adding_slider_container.unactive
+	opacity: 0 
+	transition: 0.3s
+	visibility: hidden
+	transform: translateX(-300px) !important
+	position: absolute !important
+	// top: 0
+	top: 50%
+	height: 0 !important
+	width: 0 !important
+
+.adding_tost_container.unactive
+	opacity: 0
+	visibility: hidden
+	transform: translateX(-100px) !important
+
+
+.adding_tost_container
+	transition: 0.3s
+	position: fixed
+	left: 50%
+
+	z-index: 10000000000000
+	// transform: translateY(-200%)
+	// top: 0px
+	// left: 50%
+	// background-color: #fff
+	transform: translateX(-50%)
+	width: 335px
+	div
+		z-index: 10000000000000
+		display: flex
+		position: relative
+		min-height: inherit
+		max-height: inherit
+		width: calc(375px - 40px) !important
+		p
+			font-family: "NeueMachina-Regular"
+			font-size: 14px !important
+			position: absolute
+			top: 12px
+
+.adding_main_wrapper
+@media screen and (max-width: 914px)
+	.adding_main_wrapper
+		position: fixed
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 100vw
+		z-index: 1000000000
+		z-index: 100000000000
+		top: 0
+		left: 0
+		height: 100vh
+		width: 100vw
+		background: rgba(0,0,0,0.4)
+		backdrop-filter: blur(15px)
+		border: 1px solid rgba(0,0,0,0.2)
+	.adding_container
+		// .unactive
+		// 	opacity: 0 
+		// 	transition: 0.3s
+		// 	visibility: hidden
+		// 	transform: translateX(-300px) !important
+		// 	position: absolute !important
+		// 	// top: 0
+		// 	top: 50%
+		// 	height: 0 !important
+		// 	width: 0 !important
+		position: fixed
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 1000000000
+		width: 375px
+		min-height: 580px
+		max-height: 580px
+		display: flex
+		background-color: $darkgrey-color
+		padding: 16px 24px 48px 24px
+		flex-direction: column
+		border-radius: 30px 30px 0 0
+		.adding_close_block
+			width: 100%
+			display: flex
+			justify-content: flex-end
+			margin-bottom: 12px
+			button
+				@include button-reset
+				background-color: transparent
+				display: flex
+				align-items: center
+				transform: translateX(7.5px)
+				justify-content: center
+		.adding_progress_bar
+			width: 100%
+			transition: $reg-transition
+			height: 8px
+			border-radius: 50px
+			background-color: $black-color
+			margin-bottom: 21px
+			.adding_progress_line
+				border-radius: inherit
+				transition: inherit
+				width: 25%
+				background-color: $yellow-color
+				height: 8px
+		.adding_header
+			color: $white-color
+			margin-bottom: 16px
+		.adding_stepOneBody_block
+			position: relative
+			overflow: hidden
+		.adding_chosenCollection_block 
+			margin-bottom: 24px
+			form
+				display: flex
+				.review-option:not(:last-child)
+					margin-right: 18px
+				label
+					font-family: "NeueMachina-Ultrabold"
+		.adding_searchBar_block
+			margin-bottom: 20px
+			form
+				background-color: $black-color
+				svg
+					transform: scale(1.1)
+		.adding_slider_container
+			display: flex
+			overflow-x: scroll
+			&::-webkit-scrollbar
+				display: none
+			.adding_slider_item
+				margin-bottom: 20px
+				transition: $reg-transition
+				&:not(:last-child)
+					margin-right: 24px
+
+				.adding_slider_item_headline
+					text-align: center
+					color: $white-color
+				.adding_slider_item_not_found_img
+					width: 90px
+					height: 90px
+					background-color: $black-color
+					margin-bottom: 16px
+					border-radius: 73% 27% 43% 57% / 44% 46% 54% 56%
+					position: relative
+					&:before
+						content: ""
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						position: absolute
+						background-color: #fff
+						width: 3px
+						height: 23px
+					&:after
+						content: ""
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						position: absolute
+						background-color: #fff
+						width: 23px
+						height: 3px
+				img
+					width: 90px
+					height: 90px
+					margin-bottom: 16px
+					// border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+		.adding_continueBtn_container
+			position: absolute
+			bottom: 48px
+		.adding_particles_container
+			margin-bottom: 16px
+		.adding_addedInLib_header
+			text-align: center
+			margin-bottom: 12px
+			color: $white-color
+
+
+
+
+
+@media screen and (min-width: 915px)
+	.adding_main_wrapper
+		position: fixed
+		width: 100vw
+		z-index: 1000000000
+		top: 0
+		left: 0
+		height: 100vh
+		background: rgba(0,0,0,0.4)
+		backdrop-filter: blur(15px)
+		border: 1px solid rgba(0,0,0,0.2)
+	.adding_container
+		position: fixed
+		top: 50%
+		left: 50%
+		box-shadow: 0px 0px 20px rgba(21, 21, 21, 0.6)
+		transform: translate(-50%, -50%)
+		z-index: 1000000000
+		width: 490px
+		min-height: 550px
+		max-height: 550px
+		display: flex
+		background-color: $darkgrey-color
+		padding: 16px 32px 48px 32px
+		flex-direction: column
+		.adding_upperNav_block
+			position: relative
+			padding-top: 22px
+			display: flex
+			align-items: center
+			flex-direction: row-reverse
+			justify-content: space-between
+		.adding_close_block
+			// width: 100%
+			display: flex
+			justify-content: flex-end
+			margin-bottom: 12px
+			// position: absolute
+			button
+				@include button-reset
+				background-color: transparent
+				display: flex
+				align-items: center
+				transform: translateX(7.5px)
+				justify-content: center
+		.adding_progress_bar
+			width: 327px
+			transition: $reg-transition
+			height: 8px
+			border-radius: 50px
+			background-color: $black-color
+			margin-bottom: 10px
+			.adding_progress_line
+				border-radius: inherit
+				transition: inherit
+				width: 25%
+				background-color: $yellow-color
+				height: 8px
+		.adding_header
+			color: $white-color
+			margin-bottom: 16px
+		.adding_chosenCollection_block 
+			margin-bottom: 24px
+			form
+				display: flex
+				.review-option:not(:last-child)
+					margin-right: 18px
+				label
+					font-family: "NeueMachina-Ultrabold"
+		.adding_searchBar_block
+			margin-bottom: 20px
+			form
+				background-color: $black-color
+				svg
+					transform: scale(1.1)
+		.adding_slider_container
+			display: flex
+			overflow-x: scroll
+			&::-webkit-scrollbar
+				display: none
+			.adding_slider_item
+				margin-bottom: 20px
+				cursor: pointer
+				transition: $reg-transition
+				&:not(:last-child)
+					margin-right: 24px
+
+				.adding_slider_item_headline
+					text-align: center
+					color: $white-color
+				.adding_slider_item_not_found_img
+					width: 90px
+					height: 90px
+					background-color: $black-color
+					margin-bottom: 16px
+					border-radius: 73% 27% 43% 57% / 44% 46% 54% 56%
+					position: relative
+					&:before
+						content: ""
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						position: absolute
+						background-color: #fff
+						width: 3px
+						height: 23px
+					&:after
+						content: ""
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						position: absolute
+						background-color: #fff
+						width: 23px
+						height: 3px
+				img
+					width: 90px
+					height: 90px
+					margin-bottom: 16px
+					// border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+		.adding_continueBtn_container
+			position: absolute
+			// bottom: 56px
+			width: calc(100% - 64px)
+			bottom: 56px
+			margin-top: 28px
+			button
+				width: 100%
+		.adding_particles_container
+			margin-bottom: 16px
+		.adding_addedInLib_header
+			text-align: center
+			margin-bottom: 12px
+			color: $white-color
+
+
+
+
+
+
+
+.adding_container
+	form
+		button
+			padding: 0
+		.adding_review-filter-button
+			cursor: pointer
+			display: flex
+			align-items: center
+			justify-content: center
+			color: $white-color
+			padding: 10px 24px 8px
+			svg
+				margin-right: 5px
+		.adding_review-option:not(:last-child) 
+			margin-right: 18px
+		#adding_review_filter_checkbox_addId_1, #adding_review_filter_checkbox_addId_2
+			-webkit-appearance: none
+
+
+		#adding_review_filter_checkbox_addId_1:checked ~ button, #adding_review_filter_checkbox_addId_2:checked ~ button
+			border-color: $yellow-color
+			transition: 0.35s
+			background-color: $yellow-color
+		#adding_review_filter_checkbox_addId_1:checked ~ button label, #adding_review_filter_checkbox_addId_2:checked ~ button label
+			transition: inherit
+			color: $black-color
+
+	// STEP 2 FANCY STYLING
+.adding_container
+	.adding_progress_bar_second
+		.adding_progress_line
+			width: 50%
+	.adding_caption
+		color: $white-color
+		margin-bottom: 16px
+	.adding_tasteProperties_block
+		.adding_tasteProperties_wrapper
+			display: flex
+			&:not(:last-child)
+				margin-bottom: 12px
+			.adding_taste_option:not(:last-child) button
+				margin-right: 12px
+		form
+			// grid-template-columns: 50% 50%
+			// display: flex
+			input
+				-webkit-appearance: none
+			.adding_taste_option
+				display: flex
+				align-items: flex-start
+				justify-content: flex-start
+				label
+					font-family: "NeueMachina-Ultrabold"
+					margin: 0
+					width: auto
+				.adding_review_filter_checkbox:checked ~ button
+					background-color: $yellow-color
+					border-color: $yellow-color
+					label
+						color: $black-color
+
+.adding_container_stepThree
+	.adding_progress_bar_second
+		.adding_progress_line
+			width: 75%
+
+
+
+
+
+
+
+.adding_container_stepFour
+	.danger
+		border: 2px solid #ff744a41
+	max-height: none
+	.adding_progress_bar_second
+		.adding_progress_line
+			width: 100%
+	.adding_userEndMark_block
+		display: flex
+		margin-bottom: 19px
+		.adding_rateLeaflet
+			width: 24px
+			cursor: pointer
+			height: 24px
+			background-color: $lightgrey-color
+			border-radius: 0% 50% 50% 50%
+			&:not(:last-child)
+				margin-right: 14px
+	.adding_textReview_block
+		.adding_textReview_area
+			width: 327px
+			height: 40px
+			color: $white-color
+			display: flex
+			padding: 8px 16px
+			align-items: center
+			justify-content: center
+			transition: 0.25s
+			background-color: $black-color
+			outline: none
+			margin-bottom: 30px
+			border: none
+			border-radius: 50px
+			resize: none
+			&::-webkit-scrollbar
+				/* display: none; <- Crashes Chrome on hover */
+				-webkit-appearance: none
+				margin: 0
+		.adding_textReview_area.danger
+			border: 2px solid #ff744a41
+		.focused
+			height: 88px
+			border-radius: 20px
+
+	.adding_imgContainer_block
+		display: flex
+		margin-bottom: 80px
+		justify-content: flex-start
+		overflow-x: scroll
+		&::-webkit-scrollbar
+			display: none
+		input
+			-webkit-appearance: none
+			display: none
+		.adding_filetype_label
+			min-width: 96px
+			cursor: pointer
+			min-height: 96px
+			font-size: 3rem
+			font-weight: 900
+			background-color: $black-color
+			color: $white-color
+			display: flex
+			align-items: center
+			justify-content: center
+		img
+			width: 96px
+			height: 96px
+			margin-left: 8px
+
+
+@media screen and (max-width: 914px)
+	div.container.adding_container.adding_container_categoryStep
+		position: fixed !important
+		bottom: -10px !important
+		left: 50% !important
+		transform: translateX(-51%)
+		min-width: 382px
+		.adding_categoryStep_tost_container
+			position: fixed
+			top: -86px !important
+			left: 50%
+			transform: translateX(-50%)
+div.container.adding_container.adding_container_categoryStep
+	.adding_categoryStep_tost_container
+		position: fixed
+		top: -100px
+		left: 50%
+		transform: translateX(-50%)
+	.adding_categoryStep_header	
+		margin-bottom: 28px
+	.categoryStep_teaCategory_choice
+		.categoryStep_teaCategory_value_block
+			display: flex
+			margin-bottom: 12px
+			button
+				padding: 0
+				cursor: pointer
+				margin-right: 10px
+				label
+					width: 100%
+					cursor: pointer
+					height: 100%
+					padding: 10px 24px 8px
+			input:checked ~ button
+				background-color: $yellow-color
+				color: $black-color
+				border-color: $yellow-color
+			input
+				-webkit-appearance: none
+				display: none

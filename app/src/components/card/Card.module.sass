@@ -1,0 +1,79 @@
+@import "../../constants/const-styles.sass"
+
+// @font-face 
+// 	font-family: NeueMachina-Light
+// 	src: url(../../../fonts/PPNeueMachina-Light.otf)
+
+// @font-face 
+// 	font-family: NeueMachina-Regular
+// 	src: url(../../../fonts/PPNeueMachina-Regular.otf)
+
+// @font-face 
+// 	font-family: NeueMachina-Ultrabold
+// 	src: url(../../../fonts/PPNeueMachina-Ultrabold.otf)
+
+
+.TeaCard
+	width: 375px
+	min-height: 200px
+	max-height: 200px
+	cursor: pointer
+	font-family: "NeueMachina-Regular"
+	padding: 20px 24px 12px
+	position: relative
+	transition: $reg-transition
+	&:hover
+		.ArrIcon
+			transform: translateX(5px)
+.TeaCardInfo
+	display: flex
+	flex-direction: column
+	width: 235px
+	.TeaCardName
+		font-family: 'NeueMachina-Ultrabold'
+		font-size: 28px
+		margin-bottom: 8px
+		line-height: 120%
+	.BottomCardBlock
+		position: absolute
+		bottom: 12px
+		.TeaCardTags
+			margin-top: 8px
+		.TeaCardSeparator
+			background-color: $black-color
+			border: none
+			width: 196px
+			height: 1px
+			margin-bottom: 8px
+	.TeaCardCategory, .TeaCardTags
+		font-family: 'NeueMachina-Regular'
+		font-style: normal
+		text-transform: capitalize
+		font-weight: 500
+		font-size: 12px
+		line-height: 16px
+		color: $black-color
+.TeaCardDetails
+	width: 196px
+	position: absolute
+	right: 0
+	padding: 0
+	margin: 0
+	bottom: 0
+	height: 100%
+	img
+		position: absolute
+		bottom: 0
+		transition: 0s
+		border: none
+		box-shadow: none
+		outline: none
+		right: 0
+		width: 116px
+		height: 101px
+		border-radius: 500% 0 0
+.ArrIcon
+	position: absolute
+	top: 18px
+	right: 24px
+	transition: $reg-transition

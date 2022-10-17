@@ -1,0 +1,131 @@
+@import "../../constants/const-styles.sass"
+.authpage_blur_wrapper
+		position: fixed
+		content: ""
+		top: 0
+		left: 0
+		width: 100vw
+		min-height: 100vh
+		z-index: 1000
+		background: rgba(0,0,0,0.4)
+		backdrop-filter: blur(15px)
+		border: 1px solid rgba(0,0,0,0.2)
+.authpage	
+	position: fixed
+	height: 737px
+	top: 50%
+	left: 50%
+	color: $white-color
+	transform: translate(-50%, -50%)
+	width: 490px
+	z-index: 100000	
+	background-color: $black-color
+	padding: 32px
+	// get_code_btn
+@media screen and (min-width: 915px)
+	.authpage_quit_btn_container_m
+		display: none
+	.authpage	
+		padding-left: 81px
+		.authpage_quit_btn_container_d
+			margin-bottom: 14px
+			display: flex
+			justify-content: flex-end
+			z-index: 10000000
+			.authpage_quit_btn
+				@include button-reset
+				position: relative
+				background-color: transparent
+		.whiteStars_block
+			margin-bottom: 18px
+		.authpage-header
+			margin-bottom: 24px
+			margin-top: 18px
+		.authpage_regform
+			section
+				&.authpage_password_input_section
+					margin-bottom: 32px !important
+				display: flex
+				align-items: flex-start
+				justify-content: center
+				flex-direction: column
+				&:not(:last-child)
+					margin-bottom: 20px
+				label
+					margin-bottom: 8px
+				input
+					width: 327px !important
+					&[type="password"]
+						font-size: 10px
+						letter-spacing: 5px
+				&.authpage_button_section
+					button:first-child
+						margin-bottom: 12px
+@media screen and (max-width: 915px)
+	.authpage_blur_wrapper
+		z-index: 90000000
+		background-color: $black-color
+		width: 100vw
+		height: 100vh
+		position: fixed
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		.authpage_quit_btn_container_m .authpage_quit_btn
+			@include button-reset
+			position: absolute
+			top: 56px
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: 100000000
+			display: flex
+			width: 375px
+			padding: 0 24px
+			justify-content: flex-end
+			background-color: transparent
+		.authpage
+			position: fixed
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 375px
+			height: 100vh
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			padding: 56px 24px
+			padding-top: 174px
+			overflow-y: scroll
+			.authpage_quit_btn_container_d
+				display: none
+			.authpage_whiteStars_block
+				margin-bottom: 18px
+				display: flex
+				align-items: flex-start
+				justify-content: flex-start
+				width: 100%
+			.authpage-header
+				margin-bottom: 24px
+				margin-top: 18px
+			.authpage_regform
+				section
+					&.authpage_password_input_section
+						margin-bottom: 32px !important
+					display: flex
+					align-items: flex-start
+					justify-content: center
+					flex-direction: column
+					&:not(:last-child)
+						margin-bottom: 20px
+					label
+						margin-bottom: 8px
+					input
+						width: 327px !important
+						&[type="password"]
+							font-size: 10px
+							letter-spacing: 5px
+					&.authpage_button_section
+						button:first-child
+							margin-bottom: 12px
+							font-family: "NeueMachina-Ultrabold"

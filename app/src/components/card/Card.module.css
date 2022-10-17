@@ -1,0 +1,143 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.TeaCard {
+  width: 375px;
+  min-height: 200px;
+  max-height: 200px;
+  cursor: pointer;
+  font-family: "NeueMachina-Regular";
+  padding: 20px 24px 12px;
+  position: relative;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.TeaCard:hover .ArrIcon {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.TeaCardInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 235px;
+}
+.TeaCardInfo .TeaCardName {
+  font-family: "NeueMachina-Ultrabold";
+  font-size: 28px;
+  margin-bottom: 8px;
+  line-height: 120%;
+}
+.TeaCardInfo .BottomCardBlock {
+  position: absolute;
+  bottom: 12px;
+}
+.TeaCardInfo .BottomCardBlock .TeaCardTags {
+  margin-top: 8px;
+}
+.TeaCardInfo .BottomCardBlock .TeaCardSeparator {
+  background-color: #020204;
+  border: none;
+  width: 196px;
+  height: 1px;
+  margin-bottom: 8px;
+}
+.TeaCardInfo .TeaCardCategory, .TeaCardInfo .TeaCardTags {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #020204;
+}
+
+.TeaCardDetails {
+  width: 196px;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  height: 100%;
+}
+.TeaCardDetails img {
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: 0s;
+  transition: 0s;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  right: 0;
+  width: 116px;
+  height: 101px;
+  border-radius: 500% 0 0;
+}
+
+.ArrIcon {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}

@@ -1,0 +1,395 @@
+@import "../../constants/const-styles.sass"
+@media screen and (min-width: 915px)
+	.cardPage_blur_wrapper:before
+		position: fixed
+		content: ""
+		top: 0
+		left: 0
+		width: 100vw
+		min-height: 100vh
+		z-index: 1000
+		background: rgba(0,0,0,0.4)
+		backdrop-filter: blur(15px)
+		border: 1px solid rgba(0,0,0,0.2)
+	.cardPage_container
+		cursor: auto
+		width: 600px
+		min-height: 834px
+		position: fixed
+		transition: all 0.5s
+		top: 50%
+		overflow: hidden
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $black-color
+		z-index: 100000
+		padding: 32px 32px 58px 32px
+		.cardPage_outputTost_container
+			transition: 1s
+			opacity: 0
+			transform: translateX(500px)
+			position: fixed
+			z-index: 1231212312
+		.cardPage_outputTost_container.active
+			opacity: 1
+			transform: translateX(0)
+		.cardPage_outputTost_container.unactive
+			opacity: 0
+			transform: translateX(-500px)
+		.close_btn_block
+			display: flex
+			width: 100%
+			align-items: center
+			justify-content: flex-end
+			.cardPage_arrow_close_btn
+				display: none
+			.cardPage_x_close_btn
+				@include button-reset
+				background-color: transparent
+			.cardPage_scrolling_header
+				display: none
+		.cardPage_teaPicture_block
+			width: 100%
+			display: flex
+			justify-content: center
+			margin-bottom: 36px
+			.cardPage_teaPicture_shape
+				border-radius: 39% 61% 43% 57% / 63% 48% 52% 37%
+				width: 170px
+				height: 170px
+				border: 2px solid $white-color
+				display: flex
+				align-items: center
+				justify-content: center
+				img
+					border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+					position: relative
+					width: 85%
+					height: 85%
+		.cardPage_tea_name
+			color: $white-color
+			margin-bottom: 16px
+		.cardPage_rating_section
+			width: 100%
+			display: flex
+			h2
+				color: $white-color !important
+			.cardPage_rating_block
+				display: flex
+				margin-right: 16px
+				margin-bottom: 24px
+				.cardPage_rating_leaflet
+					width: 24px
+					height: 24px
+					background-color: $lightgrey-color
+					border-radius: 0% 50% 50% 50%
+					&:not(:last-child)
+						margin-right: 14px
+		.cardPage_tea_tags
+			h2
+				font-family: "NeueMachina-Ultrabold"
+			button
+				height: 42px
+				text-transform: capitalize
+				cursor: auto
+				&:not(:last-child)
+					margin-right: 8px
+
+		.cardPage_tabs_section
+			input.cardPage_teaTags
+				-webkit-appearance: none
+			#tab_reviews:checked ~ .headline_box::before
+				left: 130px
+				width: 56px
+			#tab_reviews:checked ~ .headline_box
+
+			.headline_box
+				height: 40px
+				position: relative
+				margin-bottom: 28px
+				&::before
+					transition: $reg-transition
+					position: absolute
+					content: ""
+					width: 40px
+					height: 5px
+					background-color: $yellow-color
+					bottom: 0
+					left: 15px
+				label
+					color: $white-color
+					cursor: pointer
+					&:not(:last-child)
+						margin-right: 36px
+			.tea_info
+				.tea_reviews
+					display: none
+				p.tea_notation
+					color: $white-color
+				
+	
+		/*--------- Review Filter Styling ---------*/
+
+	.footer-review-filter
+		padding-top: 24px
+		width: 100%
+		left: 0
+		padding-left: 32px
+		height: 112px
+		margin-bottom: 20px
+		padding-bottom: 32px
+		background-color: $black-color
+		position: fixed
+		bottom: -20px
+		form
+			display: flex
+			button
+				padding: 0
+			.review-option:not(:last-child) button
+				margin-right: 16px
+			label
+				padding: 10px 24px 8px
+				font-family: "NeueMachina-Ultrabold"
+				transition: $reg-transition
+
+
+	label.review-filter-button 
+		cursor: pointer
+		color: $white-color
+
+
+	.review-filter-button:not(:last-child) 
+		margin-right: 20px
+
+
+	#adding_review_filter_checkbox_id_cardPage_1, #adding_review_filter_checkbox_id_cardPage_2
+		-webkit-appearance: none
+
+
+	#adding_review_filter_checkbox_id_cardPage_1:checked ~ button, #adding_review_filter_checkbox_id_cardPage_2:checked ~ button
+		border-color: $yellow-color
+		transition: 0.35s
+		background-color: $yellow-color
+		label.review-filter-button
+			color: $black-color !important
+	#tab_reviews:checked ~ .tea_info .tea_reviews
+		display: flex
+	#tab_reviews:checked ~ .tea_info p.tea_notation
+		display: none
+
+
+
+@media screen and (max-width: 914px)
+	
+	.cardPage_blur_wrapper
+		width: 100vw
+		min-height: 100vh
+		overflow: hidden !important
+		position: fixed
+		display: flex
+		justify-content: center
+		top: 0
+		overflow-y: scroll !important
+		left: 0
+		z-index: 1000
+		background: $black-color
+		border: 1px solid rgba(0,0,0,0.2)
+		z-index: 10000
+	.cardPage_container
+		position: absolute
+		z-index: 10000
+		overflow: hidden
+		cursor: auto
+		width: 375px
+		min-height: 100vh
+		// height: 100vh
+		transition: all 0.5s
+		background-color: $black-color
+		z-index: 100000
+		padding: 44px 24px 0px 24px
+		top: 0
+		padding-bottom: 112px
+		&::-webkit-scrollbar
+			display: none
+		.cardPage_outputTost_container
+			transition: 1s
+			opacity: 0
+			transform: translateX(500px)
+			position: fixed
+			z-index: 1231212312
+		.cardPage_outputTost_container.active
+			opacity: 1
+			transform: translateX(0)
+		.cardPage_outputTost_container.unactive
+			opacity: 0
+			transform: translateX(-500px)
+		.close_btn_block
+			display: flex
+			top: 0
+			left: 0
+			height: 92px
+			z-index: 999999
+			background-color: $black-color
+			position: fixed
+			min-width: 110%
+			align-items: center
+			padding-top: 30px
+			justify-content: flex-start
+			padding-left: 24px
+			// width: 375px
+			.cardPage_arrow_close_btn
+				@include button-reset
+				background-color: transparent
+				margin-right: 22px
+				margin-top: 2.5px
+			.cardPage_x_close_btn
+				display: none
+			.cardPage_scrolling_header
+				transition: all 0.25s
+				visibility: hidden
+			.active
+				visibility: visible
+				color: $white-color
+		.cardPage_teaPicture_block
+			width: 100%
+			display: flex
+			margin-top: 48px
+			justify-content: center
+			margin-bottom: 36px
+			.cardPage_teaPicture_shape
+				border-radius: 39% 61% 43% 57% / 63% 48% 52% 37%
+				width: 170px
+				height: 170px
+				border: 2px solid $white-color
+				display: flex
+				align-items: center
+				justify-content: center
+				img
+					border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+					position: relative
+					width: 85%
+					height: 85%
+		.cardPage_tea_name
+			color: $white-color
+			margin-bottom: 16px
+		.cardPage_rating_section
+			width: 100%
+			display: flex
+			h2
+				color: $white-color !important
+			.cardPage_rating_block
+				display: flex
+				margin-right: 16px
+				margin-bottom: 24px
+				.cardPage_rating_leaflet
+					width: 24px
+					height: 24px
+					background-color: $lightgrey-color
+					border-radius: 0% 50% 50% 50%
+					&:not(:last-child)
+						margin-right: 14px
+		.cardPage_tea_tags
+			h2
+				font-family: "NeueMachina-Ultrabold"
+			button
+				height: 42px
+				text-transform: capitalize
+				cursor: auto
+				&:not(:last-child)
+					margin-right: 8px
+				&:nth-child(-n+3)
+					margin-bottom: 12px
+
+		.cardPage_tabs_section
+			input.cardPage_teaTags
+				-webkit-appearance: none
+			#tab_reviews:checked ~ .tea_info .tea_reviews
+				display: flex
+			#tab_reviews:checked ~ .tea_info p.tea_notation
+				display: none	
+			#tab_reviews:checked ~ .headline_box::before
+				left: 130px
+				width: 56px
+			#tab_reviews:checked ~ .headline_box
+
+			.headline_box
+				height: 40px
+				position: relative
+				margin-bottom: 28px
+				&::before
+					transition: $reg-transition
+					position: absolute
+					content: ""
+					width: 40px
+					height: 5px
+					background-color: $yellow-color
+					bottom: 0
+					left: 15px
+				label
+					color: $white-color
+					cursor: pointer
+					&:not(:last-child)
+						margin-right: 36px
+			.tea_info
+				.tea_reviews
+					display: none
+					overflow-y: scroll
+				p.tea_notation
+					color: $white-color
+	
+		/*--------- Review Filter Styling ---------*/
+
+		.footer-review-filter
+			position: fixed
+			padding-top: 24px
+			width: 375px
+			z-index: 1000000
+			left: 0
+			padding-left: 32px
+			height: 112px
+			left: 50%
+			transform: translateX(-50%)
+			background-color: $black-color
+			bottom: 0
+			form
+				display: flex
+				button
+					padding: 0
+				.review-option:not(:last-child) button
+					margin-right: 16px
+				
+				label
+					padding: 10px 24px 8px
+					font-family: "NeueMachina-Ultrabold"
+					transition: $reg-transition
+
+
+			.review-filter-button
+				cursor: pointer
+				color: $white-color
+
+
+			.review-filter-button:not(:last-child) 
+				margin-right: 20px
+
+
+			#adding_review_filter_checkbox_id_cardPage_1, #adding_review_filter_checkbox_id_cardPage_2
+				-webkit-appearance: none
+
+
+			#adding_review_filter_checkbox_id_cardPage_1:checked ~ button, #adding_review_filter_checkbox_id_cardPage_2:checked ~ button
+				border-color: $yellow-color
+				transition: 0.35s
+				background-color: $yellow-color
+			#adding_review_filter_checkbox_id_cardPage_1:checked ~ button label, #adding_review_filter_checkbox_id_cardPage_2:checked ~ button label
+				transition: inherit
+				color: $black-color
+
+			#tab_reviews:checked ~ .tea_info .tea_reviews
+				display: flex
+			#tab_reviews:checked ~ .tea_info p.tea_notation
+				display: none
+.cardPage_heart_span
+	font-size: 25px
+	position: relative
+	top: 3px

@@ -1,0 +1,233 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.loginPage_blur_wrapper {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.loginPage_container {
+  position: fixed;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  color: #FFFFFF;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 490px;
+  z-index: 100000;
+  background-color: #020204;
+  padding: 32px;
+}
+
+@media screen and (min-width: 915px) {
+  .loginPage_quit_btn_container_m {
+    display: none;
+  }
+
+  .loginPage_quit_btn_container_d {
+    margin-bottom: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: 10000000;
+  }
+  .loginPage_quit_btn_container_d .loginPage_quit_btn {
+    outline: none;
+    border: none;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .loginPage_reg_with_telegram_form {
+    position: absolute;
+    bottom: 56px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 425px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .loginPage_reg_with_telegram_form .loginPage_reg_with_telegram button {
+    width: 100%;
+  }
+
+  .loginPage_input_login_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .loginPage_input_login_block input:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 915px) {
+  .loginPage_blur_wrapper {
+    z-index: 90000000;
+    background-color: #020204;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .loginPage_blur_wrapper .loginPage_quit_btn_container_m .loginPage_quit_btn {
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 100000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 375px;
+    padding: 0 20px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: transparent;
+  }
+  .loginPage_blur_wrapper .loginPage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 375px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 56px 20px;
+  }
+  .loginPage_blur_wrapper .loginPage_quit_btn_container_d {
+    display: none;
+  }
+  .loginPage_blur_wrapper .loginPage_quit_btn_container_d form {
+    max-width: 375px;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .loginPage_blur_wrapper .loginPage_quit_btn_container_d .loginPage_header {
+    color: #FFFFFF;
+    margin-top: 58px;
+  }
+  .loginPage_blur_wrapper .loginPage_quit_btn_container_d .loginPage_reg_with_telegram_form {
+    max-width: 375px;
+    padding: 0 20px;
+    margin-top: 36px;
+  }
+  .loginPage_blur_wrapper .loginPage_quit_btn_container_d .loginPage_reg_with_telegram_form .loginPage_reg_with_telegram button {
+    max-width: 375px;
+  }
+}

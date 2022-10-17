@@ -1,0 +1,112 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, .app, .app-wrapper {
+  background-color: #020204;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.app-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: none;
+  visibility: visible;
+}
+
+.app-wrapper.unactive {
+  visibility: none;
+  max-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+nav.main-nav {
+  display: none;
+}
+
+@media screen and (max-width: 915px) {
+  nav.main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+  }
+}

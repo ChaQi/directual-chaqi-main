@@ -1,0 +1,20 @@
+@import "../../fonts/fonts.css";
+.fancybox__container {
+  z-index: 1000000 !important;
+  font-family: NeueMachina-Regular !important;
+  -webkit-transition: 10s !important;
+  transition: 10s !important;
+}
+.fancybox__container .fancybox__content {
+  width: 30vmin !important;
+  height: 30vmin !important;
+  z-index: 100000000000 !important;
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
+}
+.fancybox__container .fancybox__content img {
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
+  width: 100% !important;
+  height: 100% !important;
+}

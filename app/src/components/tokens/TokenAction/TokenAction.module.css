@@ -1,0 +1,72 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.TokenAction {
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 24px 8px;
+  height: 48px;
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}

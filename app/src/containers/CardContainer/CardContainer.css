@@ -1,0 +1,89 @@
+.CardContainer {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 32px 1fr 32px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: 375px 32px 375px 32px 375px;
+  grid-template-columns: repeat(3, 375px);
+  grid-row-gap: 32px;
+  grid-column-gap: 32px;
+  padding-bottom: 100px;
+}.CardContainer > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}.CardContainer > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}.CardContainer > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}.CardContainer > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}.CardContainer > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}.CardContainer > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}.CardContainer > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}.CardContainer > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}.CardContainer > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+@media screen and (max-width: 1419px) {
+  .CardContainer {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-rows: auto auto !important;
+    grid-template-rows: auto auto !important;
+    width: 785px;
+    -ms-grid-columns: (auto)[2] !important;
+    grid-template-columns: repeat(2, auto) !important;
+  }
+  .CardContainer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .CardContainer > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .CardContainer > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .CardContainer > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+}
+@media screen and (max-width: 915px) {
+  .CardContainer {
+    width: 375px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-rows: auto 0 auto !important;
+    grid-template-rows: auto auto !important;
+    grid-gap: 0;
+    -ms-grid-columns: auto !important;
+    grid-template-columns: repeat(1, auto) !important;
+  }
+  .CardContainer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .CardContainer > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+}

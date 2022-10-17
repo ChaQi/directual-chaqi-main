@@ -1,0 +1,22 @@
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+nav ul .nav-close-btn {
+  height: 40px;
+  width: 40px;
+}
+nav ul .nav-tea-item {
+  background-color: transparent;
+  -webkit-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+}
+nav ul .nav-tea-item:not(:last-child) {
+  margin-right: 12px;
+}

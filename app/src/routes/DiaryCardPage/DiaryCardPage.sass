@@ -1,0 +1,270 @@
+@import "../../constants/const-styles.sass"
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;700&display=swap')
+@media screen and (min-width: 915px)
+	.diaryCardPage_blur_wrapper:before
+		position: fixed
+		content: ""
+		top: 0
+		left: 0
+		width: 100vw
+		min-height: 100vh
+		z-index: 1000
+		background: rgba(0,0,0,0.4)
+		backdrop-filter: blur(15px)
+		border: 1px solid rgba(0,0,0,0.2)
+	.diaryCardPage_container
+		cursor: auto
+		width: 600px
+		min-height: 834px
+		position: fixed
+		transition: all 0.5s
+		top: 50%
+		overflow: hidden
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $black-color
+		z-index: 100000
+		padding: 32px 32px 48px 32px
+		.diaryCardPage_outputTost_container
+			transition: 1s
+			opacity: 0
+			transform: translateX(500px)
+			position: fixed
+			z-index: 1231212312
+		.diaryCardPage_outputTost_container.active
+			opacity: 1
+			transform: translateX(0)
+		.diaryCardPage_outputTost_container.unactive
+			opacity: 0
+			transform: translateX(-500px)
+		.close_btn_block
+			display: flex
+			width: 100%
+			align-items: center
+			justify-content: flex-end
+			.diaryCardPage_arrow_close_btn
+				display: none
+			.diaryCardPage_x_close_btn
+				@include button-reset
+				background-color: transparent
+			.diaryCardPage_scrolling_header
+				display: none
+		.diaryCardPage_teaPicture_block
+			width: 100%
+			display: flex
+			justify-content: center
+			margin-bottom: 36px
+			.diaryCardPage_teaPicture_shape
+				border-radius: 39% 61% 43% 57% / 63% 48% 52% 37%
+				width: 170px
+				height: 170px
+				border: 2px solid $white-color
+				display: flex
+				align-items: center
+				justify-content: center
+				img
+					border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+					position: relative
+					width: 85%
+					height: 85%
+		.diaryCardPage_userReviewDate_info
+			font-family: "Red Hat Mono", "NeueMachina-Ultrabold"
+			font-weight: 700
+			margin-bottom: 8px
+			font-size: 16px
+			color: $lightgrey-color
+		.diaryCardPage_tea_name
+			color: $white-color
+			margin-bottom: 16px
+		.diaryCardPage_rating_section
+			width: 100%
+			display: flex
+			.diaryCardPage_rating_block
+				display: flex
+				margin-right: 16px
+				margin-bottom: 24px
+				.diaryCardPage_rating_leaflet
+					width: 24px
+					height: 24px
+					background-color: $lightgrey-color
+					border-radius: 0% 50% 50% 50%
+					&:not(:last-child)
+						margin-right: 14px
+		.diaryCardPage_tea_tags
+			h2
+				font-family: "NeueMachina-Ultrabold"
+			button
+				height: 42px
+				text-transform: capitalize
+				cursor: auto
+				&:not(:last-child)
+					margin-right: 8px
+				&:nth-child(-n+3)
+					margin-bottom: 12px
+		p.tea_notation
+			color: $white-color
+			margin-top: 20px
+			margin-bottom: 28px
+		.diaryCardPage_button_container
+			display: flex
+			position: absolute
+			bottom: 58px
+			max-width: 600px
+			padding-right: 60px
+			align-items: center
+			justify-content: center
+			margin-top: 32px
+			button
+				padding: 14px 20px 12px
+			button:nth-child(3)
+				min-width: 226px
+			button:not(:last-child)
+				margin-right: 12px
+		.diaryCardPage_userPhotos_block
+			img
+				width: 96px
+				height: 96px
+			img:not(:last-child)
+				margin-right: 8px
+@media screen and (max-width: 914px)
+	
+	.diaryCardPage_blur_wrapper
+		width: 100vw
+		min-height: 100vh
+		overflow: hidden !important
+		position: fixed
+		display: flex
+		justify-content: center
+		top: 0
+		overflow-y: scroll !important
+		left: 0
+		z-index: 1000
+		background: $black-color
+		border: 1px solid rgba(0,0,0,0.2)
+		z-index: 10000
+	.diaryCardPage_container
+		position: absolute
+		z-index: 10000
+		overflow: hidden
+		cursor: auto
+		width: 375px
+		min-height: 100vh
+		// height: 100vh
+		transition: all 0.5s
+		background-color: $black-color
+		z-index: 100000
+		padding: 44px 24px 48px 24px
+		top: 0
+		// padding-bottom: 112px
+		&::-webkit-scrollbar
+			display: none
+		.diaryCardPage_outputTost_container
+			transition: 1s
+			opacity: 0
+			transform: translateX(500px)
+			position: fixed
+			z-index: 1231212312
+		.diaryCardPage_outputTost_container.active
+			opacity: 1
+			transform: translateX(0)
+		.diaryCardPage_outputTost_container.unactive
+			opacity: 0
+			transform: translateX(-500px)
+		.close_btn_block
+			display: flex
+			top: 0
+			left: 0
+			height: 92px
+			z-index: 999999
+			background-color: $black-color
+			position: fixed
+			min-width: 110%
+			align-items: center
+			padding-top: 30px
+			justify-content: flex-start
+			padding-left: 24px
+			// width: 375px
+			.diaryCardPage_arrow_close_btn
+				@include button-reset
+				background-color: transparent
+				margin-right: 22px
+				margin-top: 2.5px
+			.diaryCardPage_x_close_btn
+				display: none
+			.diaryCardPage_scrolling_header
+				transition: all 0.25s
+				visibility: hidden
+			.active
+				visibility: visible
+				color: $white-color
+		.diaryCardPage_teaPicture_block
+			width: 100%
+			display: flex
+			margin-top: 48px
+			justify-content: center
+			margin-bottom: 36px
+			.diaryCardPage_teaPicture_shape
+				border-radius: 39% 61% 43% 57% / 63% 48% 52% 37%
+				width: 170px
+				height: 170px
+				border: 2px solid $white-color
+				display: flex
+				align-items: center
+				justify-content: center
+				img
+					border-radius: 48% 52% 43% 57% / 36% 40% 60% 64%
+					position: relative
+					width: 85%
+					height: 85%
+		.diaryCardPage_userReviewDate_info
+			font-family: "Red Hat Mono", "NeueMachina-Ultrabold"
+			font-weight: 700
+			margin-bottom: 8px
+			font-size: 16px
+			color: $lightgrey-color
+		.diaryCardPage_tea_name
+			color: $white-color
+			margin-bottom: 16px
+		.diaryCardPage_rating_section
+			width: 100%
+			display: flex
+			.diaryCardPage_rating_block
+				display: flex
+				margin-right: 16px
+				margin-bottom: 24px
+				.diaryCardPage_rating_leaflet
+					width: 24px
+					height: 24px
+					background-color: $lightgrey-color
+					border-radius: 0% 50% 50% 50%
+					&:not(:last-child)
+						margin-right: 14px
+		.diaryCardPage_tea_tags
+			h2
+				font-family: "NeueMachina-Ultrabold"
+			button
+				height: 42px
+				text-transform: capitalize
+				cursor: auto
+				&:not(:last-child)
+					margin-right: 8px
+				&:nth-child(-n+3)
+					margin-bottom: 12px
+		p.tea_notation
+			color: $white-color
+			margin-top: 20px
+			margin-bottom: 28px
+		.diaryCardPage_button_container
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			margin-top: 32px
+			button:not(:last-child)
+				margin-bottom: 12px
+		.diaryCardPage_userPhotos_block
+			img
+				width: 96px
+				height: 96px
+			img:not(:last-child)
+				margin-right: 8px

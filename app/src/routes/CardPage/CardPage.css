@@ -1,0 +1,585 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (min-width: 915px) {
+  .cardPage_blur_wrapper:before {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .cardPage_container {
+    cursor: auto;
+    width: 600px;
+    min-height: 834px;
+    position: fixed;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    top: 50%;
+    overflow: hidden;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #020204;
+    z-index: 100000;
+    padding: 32px 32px 58px 32px;
+    /*--------- Review Filter Styling ---------*/
+  }
+  .cardPage_container .cardPage_outputTost_container {
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 0;
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    position: fixed;
+    z-index: 1231212312;
+  }
+  .cardPage_container .cardPage_outputTost_container.active {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .cardPage_container .cardPage_outputTost_container.unactive {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  .cardPage_container .close_btn_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .cardPage_container .close_btn_block .cardPage_arrow_close_btn {
+    display: none;
+  }
+  .cardPage_container .close_btn_block .cardPage_x_close_btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  .cardPage_container .close_btn_block .cardPage_scrolling_header {
+    display: none;
+  }
+  .cardPage_container .cardPage_teaPicture_block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 36px;
+  }
+  .cardPage_container .cardPage_teaPicture_block .cardPage_teaPicture_shape {
+    border-radius: 39% 61% 43% 57%/63% 48% 52% 37%;
+    width: 170px;
+    height: 170px;
+    border: 2px solid #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cardPage_container .cardPage_teaPicture_block .cardPage_teaPicture_shape img {
+    border-radius: 48% 52% 43% 57%/36% 40% 60% 64%;
+    position: relative;
+    width: 85%;
+    height: 85%;
+  }
+  .cardPage_container .cardPage_tea_name {
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  .cardPage_container .cardPage_rating_section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cardPage_container .cardPage_rating_section h2 {
+    color: #FFFFFF !important;
+  }
+  .cardPage_container .cardPage_rating_section .cardPage_rating_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 16px;
+    margin-bottom: 24px;
+  }
+  .cardPage_container .cardPage_rating_section .cardPage_rating_block .cardPage_rating_leaflet {
+    width: 24px;
+    height: 24px;
+    background-color: #58585C;
+    border-radius: 0% 50% 50% 50%;
+  }
+  .cardPage_container .cardPage_rating_section .cardPage_rating_block .cardPage_rating_leaflet:not(:last-child) {
+    margin-right: 14px;
+  }
+  .cardPage_container .cardPage_tea_tags h2 {
+    font-family: "NeueMachina-Ultrabold";
+  }
+  .cardPage_container .cardPage_tea_tags button {
+    height: 42px;
+    text-transform: capitalize;
+    cursor: auto;
+  }
+  .cardPage_container .cardPage_tea_tags button:not(:last-child) {
+    margin-right: 8px;
+  }
+  .cardPage_container .cardPage_tabs_section input.cardPage_teaTags {
+    -webkit-appearance: none;
+  }
+  .cardPage_container .cardPage_tabs_section #tab_reviews:checked ~ .headline_box::before {
+    left: 130px;
+    width: 56px;
+  }
+  .cardPage_container .cardPage_tabs_section .headline_box {
+    height: 40px;
+    position: relative;
+    margin-bottom: 28px;
+  }
+  .cardPage_container .cardPage_tabs_section .headline_box::before {
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #E7BB63;
+    bottom: 0;
+    left: 15px;
+  }
+  .cardPage_container .cardPage_tabs_section .headline_box label {
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .cardPage_container .cardPage_tabs_section .headline_box label:not(:last-child) {
+    margin-right: 36px;
+  }
+  .cardPage_container .cardPage_tabs_section .tea_info .tea_reviews {
+    display: none;
+  }
+  .cardPage_container .cardPage_tabs_section .tea_info p.tea_notation {
+    color: #FFFFFF;
+  }
+
+  .footer-review-filter {
+    padding-top: 24px;
+    width: 100%;
+    left: 0;
+    padding-left: 32px;
+    height: 112px;
+    margin-bottom: 20px;
+    padding-bottom: 32px;
+    background-color: #020204;
+    position: fixed;
+    bottom: -20px;
+  }
+  .footer-review-filter form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-review-filter form button {
+    padding: 0;
+  }
+  .footer-review-filter form .review-option:not(:last-child) button {
+    margin-right: 16px;
+  }
+  .footer-review-filter form label {
+    padding: 10px 24px 8px;
+    font-family: "NeueMachina-Ultrabold";
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+  }
+
+  label.review-filter-button {
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+
+  .review-filter-button:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  #adding_review_filter_checkbox_id_cardPage_1, #adding_review_filter_checkbox_id_cardPage_2 {
+    -webkit-appearance: none;
+  }
+
+  #adding_review_filter_checkbox_id_cardPage_1:checked ~ button, #adding_review_filter_checkbox_id_cardPage_2:checked ~ button {
+    border-color: #E7BB63;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    background-color: #E7BB63;
+  }
+  #adding_review_filter_checkbox_id_cardPage_1:checked ~ button label.review-filter-button, #adding_review_filter_checkbox_id_cardPage_2:checked ~ button label.review-filter-button {
+    color: #020204 !important;
+  }
+
+  #tab_reviews:checked ~ .tea_info .tea_reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  #tab_reviews:checked ~ .tea_info p.tea_notation {
+    display: none;
+  }
+}
+@media screen and (max-width: 914px) {
+  .cardPage_blur_wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden !important;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0;
+    overflow-y: scroll !important;
+    left: 0;
+    z-index: 1000;
+    background: #020204;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+  }
+
+  .cardPage_container {
+    position: absolute;
+    z-index: 10000;
+    overflow: hidden;
+    cursor: auto;
+    width: 375px;
+    min-height: 100vh;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: #020204;
+    z-index: 100000;
+    padding: 44px 24px 0px 24px;
+    top: 0;
+    padding-bottom: 112px;
+    /*--------- Review Filter Styling ---------*/
+  }
+  .cardPage_container::-webkit-scrollbar {
+    display: none;
+  }
+  .cardPage_container .cardPage_outputTost_container {
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 0;
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    position: fixed;
+    z-index: 1231212312;
+  }
+  .cardPage_container .cardPage_outputTost_container.active {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .cardPage_container .cardPage_outputTost_container.unactive {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  .cardPage_container .close_btn_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 92px;
+    z-index: 999999;
+    background-color: #020204;
+    position: fixed;
+    min-width: 110%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 24px;
+  }
+  .cardPage_container .close_btn_block .cardPage_arrow_close_btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-right: 22px;
+    margin-top: 2.5px;
+  }
+  .cardPage_container .close_btn_block .cardPage_x_close_btn {
+    display: none;
+  }
+  .cardPage_container .close_btn_block .cardPage_scrolling_header {
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    visibility: hidden;
+  }
+  .cardPage_container .close_btn_block .active {
+    visibility: visible;
+    color: #FFFFFF;
+  }
+  .cardPage_container .cardPage_teaPicture_block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 36px;
+  }
+  .cardPage_container .cardPage_teaPicture_block .cardPage_teaPicture_shape {
+    border-radius: 39% 61% 43% 57%/63% 48% 52% 37%;
+    width: 170px;
+    height: 170px;
+    border: 2px solid #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cardPage_container .cardPage_teaPicture_block .cardPage_teaPicture_shape img {
+    border-radius: 48% 52% 43% 57%/36% 40% 60% 64%;
+    position: relative;
+    width: 85%;
+    height: 85%;
+  }
+  .cardPage_container .cardPage_tea_name {
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  .cardPage_container .cardPage_rating_section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cardPage_container .cardPage_rating_section h2 {
+    color: #FFFFFF !important;
+  }
+  .cardPage_container .cardPage_rating_section .cardPage_rating_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 16px;
+    margin-bottom: 24px;
+  }
+  .cardPage_container .cardPage_rating_section .cardPage_rating_block .cardPage_rating_leaflet {
+    width: 24px;
+    height: 24px;
+    background-color: #58585C;
+    border-radius: 0% 50% 50% 50%;
+  }
+  .cardPage_container .cardPage_rating_section .cardPage_rating_block .cardPage_rating_leaflet:not(:last-child) {
+    margin-right: 14px;
+  }
+  .cardPage_container .cardPage_tea_tags h2 {
+    font-family: "NeueMachina-Ultrabold";
+  }
+  .cardPage_container .cardPage_tea_tags button {
+    height: 42px;
+    text-transform: capitalize;
+    cursor: auto;
+  }
+  .cardPage_container .cardPage_tea_tags button:not(:last-child) {
+    margin-right: 8px;
+  }
+  .cardPage_container .cardPage_tea_tags button:nth-child(-n+3) {
+    margin-bottom: 12px;
+  }
+  .cardPage_container .cardPage_tabs_section input.cardPage_teaTags {
+    -webkit-appearance: none;
+  }
+  .cardPage_container .cardPage_tabs_section #tab_reviews:checked ~ .tea_info .tea_reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cardPage_container .cardPage_tabs_section #tab_reviews:checked ~ .tea_info p.tea_notation {
+    display: none;
+  }
+  .cardPage_container .cardPage_tabs_section #tab_reviews:checked ~ .headline_box::before {
+    left: 130px;
+    width: 56px;
+  }
+  .cardPage_container .cardPage_tabs_section .headline_box {
+    height: 40px;
+    position: relative;
+    margin-bottom: 28px;
+  }
+  .cardPage_container .cardPage_tabs_section .headline_box::before {
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #E7BB63;
+    bottom: 0;
+    left: 15px;
+  }
+  .cardPage_container .cardPage_tabs_section .headline_box label {
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .cardPage_container .cardPage_tabs_section .headline_box label:not(:last-child) {
+    margin-right: 36px;
+  }
+  .cardPage_container .cardPage_tabs_section .tea_info .tea_reviews {
+    display: none;
+    overflow-y: scroll;
+  }
+  .cardPage_container .cardPage_tabs_section .tea_info p.tea_notation {
+    color: #FFFFFF;
+  }
+  .cardPage_container .footer-review-filter {
+    position: fixed;
+    padding-top: 24px;
+    width: 375px;
+    z-index: 1000000;
+    left: 0;
+    padding-left: 32px;
+    height: 112px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #020204;
+    bottom: 0;
+  }
+  .cardPage_container .footer-review-filter form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cardPage_container .footer-review-filter form button {
+    padding: 0;
+  }
+  .cardPage_container .footer-review-filter form .review-option:not(:last-child) button {
+    margin-right: 16px;
+  }
+  .cardPage_container .footer-review-filter form label {
+    padding: 10px 24px 8px;
+    font-family: "NeueMachina-Ultrabold";
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+  }
+  .cardPage_container .footer-review-filter .review-filter-button {
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+  .cardPage_container .footer-review-filter .review-filter-button:not(:last-child) {
+    margin-right: 20px;
+  }
+  .cardPage_container .footer-review-filter #adding_review_filter_checkbox_id_cardPage_1, .cardPage_container .footer-review-filter #adding_review_filter_checkbox_id_cardPage_2 {
+    -webkit-appearance: none;
+  }
+  .cardPage_container .footer-review-filter #adding_review_filter_checkbox_id_cardPage_1:checked ~ button, .cardPage_container .footer-review-filter #adding_review_filter_checkbox_id_cardPage_2:checked ~ button {
+    border-color: #E7BB63;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    background-color: #E7BB63;
+  }
+  .cardPage_container .footer-review-filter #adding_review_filter_checkbox_id_cardPage_1:checked ~ button label, .cardPage_container .footer-review-filter #adding_review_filter_checkbox_id_cardPage_2:checked ~ button label {
+    -webkit-transition: inherit;
+    transition: inherit;
+    color: #020204;
+  }
+  .cardPage_container .footer-review-filter #tab_reviews:checked ~ .tea_info .tea_reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cardPage_container .footer-review-filter #tab_reviews:checked ~ .tea_info p.tea_notation {
+    display: none;
+  }
+}
+.cardPage_heart_span {
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+}

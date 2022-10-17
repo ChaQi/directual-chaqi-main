@@ -1,0 +1,301 @@
+.headerOne-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.headerTwo-font {
+  font-family: "NeueMachina-Ultrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.buttonOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.buttonTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionOne-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.captionTwo-font {
+  font-family: "NeueMachina-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.profilePage_container div.unactive {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  max-width: 0;
+  max-height: 0;
+  display: none;
+}
+.profilePage_container .teaListContainer {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  max-width: none;
+  max-height: none;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (max-width: 915px) {
+  .profilePage_container {
+    padding: 56px 20px 0px 20px;
+  }
+  .profilePage_container .app-header {
+    display: none !important;
+  }
+  .profilePage_container .profilePage_settings_block {
+    width: 375px;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .profilePage_container .profilePage_settings_block .profilePage_settings_btn_m {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  .profilePage_container .profilePage_userInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 32px;
+  }
+  .profilePage_container .profilePage_userInfo .profilePage_userAvatar_block {
+    border: 2px solid #FFFFFF;
+    border-radius: 48% 52% 43% 57%/36% 40% 60% 64%;
+    width: 98px;
+    height: 98px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .profilePage_container .profilePage_userInfo .profilePage_userAvatar_block .profilePage_userImg {
+    width: 85%;
+    height: 85%;
+    border-radius: 73% 27% 43% 57%/44% 46% 54% 56%;
+  }
+  .profilePage_container .profilePage_userInfo .profilePage_username {
+    color: #FFFFFF;
+    margin-bottom: 4px;
+  }
+  .profilePage_container .profilePage_userInfo .profilePage_categoryTeasCount_info {
+    color: #FFFFFF;
+  }
+  .profilePage_container .profilePage_teaCategoryFilter {
+    margin-bottom: 36px;
+  }
+  .profilePage_container .profilePage_teaCategoryFilter form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profilePage_container .profilePage_teaCategoryFilter form .profilePage_reviewOption:not(:last-child) {
+    margin-right: 12px;
+  }
+  .profilePage_container .profilePage_teaCategoryFilter form .profilePage_reviewOption .profilePage_teaCategoryInput {
+    -webkit-appearance: none;
+    display: none;
+  }
+  .profilePage_container .profilePage_teaCategoryFilter form .profilePage_reviewOption button {
+    padding: 0;
+    cursor: pointer;
+  }
+  .profilePage_container .profilePage_teaCategoryFilter form .profilePage_reviewOption button > label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 24px 8px;
+    cursor: pointer;
+  }
+  .profilePage_container .profilePage_changeProfileBtn {
+    display: none;
+  }
+}
+@media screen and (min-width: 916px) {
+  .profilePage_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profilePage_container .profilePage_profileMainWrapper {
+    padding-top: 168px;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_settings_block {
+    display: none;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_userInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_userInfo .profilePage_userAvatar_block {
+    border: 2px solid #FFFFFF;
+    border-radius: 48% 52% 43% 57%/36% 40% 60% 64%;
+    width: 140px;
+    height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_userInfo .profilePage_userAvatar_block .profilePage_userImg {
+    width: 85%;
+    height: 85%;
+    border-radius: 73% 27% 43% 57%/44% 46% 54% 56%;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_userInfo .profilePage_username {
+    color: #FFFFFF;
+    margin-bottom: 4px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_userInfo .profilePage_categoryTeasCount_info {
+    color: #FFFFFF;
+    display: none;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_userInfo .profilePage_changeProfileBtn {
+    display: block;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_teaCategoryFilter {
+    margin-bottom: 36px;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_teaCategoryFilter form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_teaCategoryFilter form .profilePage_reviewOption:not(:last-child) {
+    margin-right: 12px;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_teaCategoryFilter form .profilePage_reviewOption .profilePage_teaCategoryInput {
+    -webkit-appearance: none;
+    display: none;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_teaCategoryFilter form .profilePage_reviewOption button {
+    padding: 0;
+    cursor: pointer;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .profilePage_teaCategoryFilter form .profilePage_reviewOption button > label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 24px 8px;
+    cursor: pointer;
+  }
+  .profilePage_container .profilePage_profileMainWrapper .not_authorized_empty_paragraph {
+    font-size: 18px;
+  }
+}
